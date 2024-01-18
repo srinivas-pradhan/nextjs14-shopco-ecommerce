@@ -8,21 +8,21 @@ const NavBar = () => {
         <div className="
             h-24 
             w-full 
-            bg-slate-400 
-            flex 
-            items-center 
+            flex
+            items-center
             justify-between 
+            m-auto
             "
         >
             <div onClick={() => { router.push('/')}} 
-            className="font-integral-cf-bold text-4xl cursor-default">
+            className="font-integral-cf-bold text-4xl cursor-default ml-12">
                 SHOP.CO
             </div>
-            <div >
-                <ul className="font-satoshi text-xl">
-                    <li className="flex justify-normal gap-1 cursor-default">
+            <div className="flex justify-between items-center">
+                <ul className="font-satoshi text-xl flex justify-center items-center  gap-4">
+                    <li className="flex justify-normal cursor-default gap-1">
                         Shop
-                        <Image className="py-3"
+                        <Image className="mt-2"
                             height={17}
                             width={17}
                             src="/elements/DownChevron.svg"
@@ -66,9 +66,9 @@ const NavBar = () => {
                 </div> 
             </div> 
             </div>
-            <div>
-                <ul>
-                    <li>
+            <div className="flex justify-between items-center mr-12">
+                <ul className="flex justify-center items-center gap-4">
+                    <li className="">
                         <Image
                             height={24}
                             width={24}
