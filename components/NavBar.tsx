@@ -70,7 +70,7 @@ const NavBar = () => {
             </div> 
             </div>
             <div className="flex justify-between items-center mr-12 mt-2">
-                <ul className="flex justify-center items-center gap-4">
+                <ul className="flex justify-center items-center gap-6">
                     <li className="cursor-default" onClick={() => {}}>
                         <Image
                             height={24}
