@@ -20,7 +20,10 @@ const NavBar = () => {
             </div>
             <div className="flex justify-between items-center mt-2">
                 <ul className="font-satoshi text-xl flex justify-center items-center  gap-4">
-                    <li className="flex justify-normal cursor-default gap-1">
+                    <li className="flex justify-normal cursor-default gap-1
+                    "
+                    onClick={() => {}}
+                    >
                         Shop
                         <Image className="mt-2"
                             height={17}
@@ -29,9 +32,9 @@ const NavBar = () => {
                             alt=""
                         />
                     </li>
-                    <li>On Sale</li>
-                    <li>New Arrivals</li>
-                    <li>Brands</li>
+                    <li className="cursor-default" onClick={() => {}}>On Sale</li>
+                    <li className="cursor-default" onClick={() => {}}>New Arrivals</li>
+                    <li className="cursor-default" onClick={() => {}}>Brands</li>
                 </ul>
             </div>
             <div >
@@ -68,7 +71,7 @@ const NavBar = () => {
             </div>
             <div className="flex justify-between items-center mr-12 mt-2">
                 <ul className="flex justify-center items-center gap-4">
-                    <li className="">
+                    <li className="cursor-default" onClick={() => {}}>
                         <Image
                             height={24}
                             width={24}
@@ -77,7 +80,7 @@ const NavBar = () => {
                             alt=""
                         />
                     </li>
-                    <li>
+                    <li className="cursor-default" onClick={() => {}}>
                         <Image
                             height={24}
                             width={24}
