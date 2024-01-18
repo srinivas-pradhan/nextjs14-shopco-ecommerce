@@ -18,7 +18,7 @@ const NavBar = () => {
             className="font-integral-cf-bold text-4xl cursor-default ml-12">
                 SHOP.CO
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mt-2">
                 <ul className="font-satoshi text-xl flex justify-center items-center  gap-4">
                     <li className="flex justify-normal cursor-default gap-1">
                         Shop
@@ -35,7 +35,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div >
-                <div className="relative"> 
+                <div className="relative mt-2"> 
                     <input 
                         type="text" 
                         className="
@@ -66,7 +66,7 @@ const NavBar = () => {
                 </div> 
             </div> 
             </div>
-            <div className="flex justify-between items-center mr-12">
+            <div className="flex justify-between items-center mr-12 mt-2">
                 <ul className="flex justify-center items-center gap-4">
                     <li className="">
                         <Image
