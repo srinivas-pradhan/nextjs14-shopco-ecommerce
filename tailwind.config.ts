@@ -8,7 +8,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'satoshi': ["satoshi"]
+      'satoshi': ["satoshi"],
+      'integral-cf-bold': ["integral-cf-bold"]
     },
     extend: {
       backgroundImage: {

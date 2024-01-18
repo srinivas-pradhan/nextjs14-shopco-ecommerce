@@ -5,4 +5,9 @@
 @font-face { 
     font-family: "satoshi"; 
     src: url("../public/fonts/Satoshi-Regular.otf"); 
+}
+
+@font-face { 
+    font-family: "integral-cf-bold"; 
+    src: url("../public/fonts/Integralcf-bold.otf"); 
 } 
