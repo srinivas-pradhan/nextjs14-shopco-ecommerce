@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 
 import ClientOnly from '@/components/ClientOnly';
 import OfferBar from '@/components/OfferBar';
+import NavBar from '@/components/NavBar';
 
 import '../globals.css'
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClientOnly>
           <OfferBar/>
+          <NavBar/>
           {children}
         </ClientOnly>      
       </body>
