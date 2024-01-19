@@ -18,7 +18,7 @@ const NavBar = () => {
             className="font-integral-cf-bold xl:text-4xl lg:text-3xl text-2xl cursor-default ml-12">
                 SHOP.CO
             </div>
-            <div className="justify-between items-center mt-2">
+            <div className="hidden lg:flex justify-between items-center mt-2">
                 <ul className="
                     font-satoshi 
                     text-lg 
@@ -49,7 +49,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div >
-                <div className="relative mt-2" onSubmit={()=>{}}> 
+                <div className="relative mt-2 hidden lg:flex " onSubmit={()=>{}}> 
                     <input 
                         type="text" 
                         className="
@@ -60,7 +60,7 @@ const NavBar = () => {
                             h-12
                             xl:w-[577px]
                             lg:w-[400px]
-                            md:w-[200px]
+                            md:w-[300px]
                             bg-spanish-gray
                             opacity-30
                             placeholder-black
