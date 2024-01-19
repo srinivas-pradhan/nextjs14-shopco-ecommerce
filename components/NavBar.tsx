@@ -15,13 +15,23 @@ const NavBar = () => {
             "
         >
             <div onClick={() => { router.push('/')}} 
-            className="font-integral-cf-bold xl:text-4xl lg:text-3xl text-2xl cursor-default ml-12">
+            className="lg:hidden md:flex ml-5 mt-2">
+                <Image
+                    height={24}
+                    width={24}
+                    quality={100}
+                    src="/elements/MobileNav.svg"
+                    alt=""
+                />
+            </div>
+            <div onClick={() => { router.push('/')}} 
+            className="font-integral-cf-bold xl:text-4xl lg:text-3xl md:text-4xl text-2xl cursor-default lg:ml-12 md:-ml-36 ml-0">
                 SHOP.CO
             </div>
             <div className="hidden lg:flex justify-between items-center mt-2">
                 <ul className="
                     font-satoshi 
-                    text-lg 
+                    text-xl 
                     xl:text-lg
                     lg:text-md
                     md:text-sm
@@ -84,6 +94,14 @@ const NavBar = () => {
             </div>
             <div className="flex justify-between items-center mr-12 mt-2">
                 <ul className="flex justify-center items-center gap-6">
+                    <li className="cursor-default lg:hidden flex" onClick={() => {}}>
+                        <Image
+                            height={24}
+                            width={24}
+                            src="/elements/SearchIcon.svg"
+                            alt=""
+                        />
+                    </li>
                     <li className="cursor-default" onClick={() => {}}>
                         <Image
                             height={24}
