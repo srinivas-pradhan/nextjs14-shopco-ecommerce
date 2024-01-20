@@ -25,7 +25,7 @@ const NavBar = () => {
                 />
             </div>
             <div onClick={() => { router.push('/')}} 
-            className="font-integral-cf-bold xl:text-4xl lg:text-3xl md:text-4xl text-2xl cursor-default lg:ml-12 md:-ml-36 ml-0">
+            className="font-integral-cf-bold xl:text-4xl lg:text-3xl md:text-4xl text-2xl cursor-default lg:ml-12 sm:-ml-36 ml-0">
                 SHOP.CO
             </div>
             <div className="hidden lg:flex justify-between items-center mt-2">
@@ -98,7 +98,7 @@ const NavBar = () => {
                         <Image
                             height={24}
                             width={24}
-                            src="/elements/SearchIcon.svg"
+                            src="/elements/MobileSearch.svg"
                             alt=""
                         />
                     </li>
