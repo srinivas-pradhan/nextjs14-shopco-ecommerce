@@ -1,9 +1,19 @@
 'use client';
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { AiOutlineClose } from 'react-icons/ai';
+
+
+import { useState } from "react";
 
 const NavBar = () => {
     const router = useRouter();
+    const [menuOpen, setmenuOpen] = useState(false);
+
+    const MenuBarOpen = () => {
+        setmenuOpen(!menuOpen)
+    }
+
     return ( 
         <div className="
             h-24 
@@ -14,7 +24,7 @@ const NavBar = () => {
             m-auto
             "
         >
-            <div onClick={() => { router.push('/')}} 
+            <div onClick={MenuBarOpen} 
             className="lg:hidden md:flex ml-5 mt-2">
                 <Image
                     height={24}
@@ -121,7 +131,38 @@ const NavBar = () => {
                     </li>
                 </ul>
             </div>
-
+            <div className={
+                    menuOpen 
+                    ?  "fixed md:w-[50%] w-[100%] left-0 top-0 lg:hidden h-screen bg-white p-10 ease-in duration-500"
+                    :   "fixed w-56 left-[-100%] top-0 p-10 h-screen ease-in duration-500"
+                }
+            >
+                <div onClick={MenuBarOpen}
+                    className="
+                        lg:hidden
+                        cursor-default
+                        transition
+                        ease-in-out
+                        duration-500
+                        text-black
+                        flex
+                        items-end
+                        justify-end
+                    "
+                >
+                    <AiOutlineClose size={50}/>
+                </div>
+                <div className="py-10">
+                    <ul className="space-y-16">
+                        <li className="cursor-default text-4xl flex -pt-6">
+                            Shop
+                        </li>
+                        <li className="cursor-default text-4xl" onClick={() => {}}>On Sale</li>
+                        <li className="cursor-default text-4xl" onClick={() => {}}>New Arrivals</li>
+                        <li className="cursor-default text-4xl" onClick={() => {}}>Brands</li>
+                    </ul>
+                </div>
+            </div>
         </div>
      );
 }

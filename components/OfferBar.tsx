@@ -9,7 +9,7 @@ const OfferBar = () => {
         SetcloseOfferBar(true);
     }
     return ( 
-        <div onClick={CloseBar} className={
+        <div className={
             closeOfferBar 
                 ? "bg-black h-0 ease-out duration-500"
                 : "bg-black h-10 w-full flex justify-between items-center"
@@ -31,18 +31,18 @@ const OfferBar = () => {
                             ? "text-white invisible ease-out duration-500"
                             : "underline cursor-pointer text-white font-satoshi md:text-base text-xs"
                         }
-                        onClick={() =>{}}
+                        onClick={() =>{console.log("funny")}}
                     >
                     Sign Up Now
                     </li>
                 </ul>
                 <div className="cursor-pointer text-white font-satoshi md:text-sm text-xs hidden md:block oncl"
-                    onClick={() => {}}
+                    onClick={CloseBar}
                 >
                     <Image
                         height={15}
                         width={15}
-                        src="/elements/X.png"
+                        src="/elements/X.svg"
                         alt=""
                     />
                 </div>
