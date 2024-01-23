@@ -36,15 +36,6 @@ const NavBar = () => {
         setSearchOpen(!SearchOpen)
     }
 
-    useEffect(() => {
-        let handler = (e) => {
-            if (!searchRef.current?.contains(e.target)) {
-                setSearchOpen(false);
-            }
-        }
-        document.addEventListener("mousedown", handler);
-    })
-
     return ( 
         <div className="
             h-24 
@@ -153,6 +144,18 @@ const NavBar = () => {
                             src="/elements/MobileSearch.svg"
                             alt=""
                         />
+                        { 
+                        SearchOpen &&
+                        <div className="absolute mt-8 items-center bg-black text-white  w-40 rounded-md" >
+                            <div className="relative">
+                                <input className="rounded-md absolute h-8" type="text" placeholder="Search for Prod.." onClick={() => {
+                                    let handler = (e) => {
+                                        e.stopPropagation();
+                                    }
+                                }}/>
+                            </div>
+                        </div>
+                        }
                     </li>
                     <li className="cursor-default" onClick={() => {}}>
                         <Image
