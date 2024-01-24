@@ -43,7 +43,8 @@ const NavBar = () => {
             flex
             items-center
             justify-between 
-            m-auto
+            m-auto 
+            
             "
         >
             <div onClick={MenuBarOpen} 
