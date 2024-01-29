@@ -6,6 +6,7 @@ import OfferBar from '@/components/OfferBar';
 import NavBar from '@/components/NavBar';
 
 import '../globals.css'
+import { LandingScreen } from '@/components/LandingScreen';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <ClientOnly>
           <OfferBar/>
           <NavBar/>
+          <LandingScreen/>
           {children}
         </ClientOnly>      
       </body>

@@ -1,3 +1,4 @@
+import { url } from 'inspector'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -12,11 +13,10 @@ const config: Config = {
       'integral-cf-bold': ["integral-cf-bold"]
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      backgroundImage: (theme) => ({
+        'main-screen': "url('../public/elements/MainScreenFull.svg')",
+        'main-screen-mobile': "url('../public/elements/MainScreenMobile.svg')",
+      }),
       colors: {
         'spanish-gray': '#9a9a9a',
       }

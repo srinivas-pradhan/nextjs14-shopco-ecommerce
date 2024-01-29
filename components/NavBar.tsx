@@ -106,6 +106,7 @@ const NavBar = () => {
                     <input 
                         type="text" 
                         className="
+                            font-satoshi
                             pl-10 
                             pr-4 
                             py-2 
@@ -146,7 +147,7 @@ const NavBar = () => {
                         />
                         { 
                         SearchOpen &&
-                        <div className="absolute mt-8 items-center bg-black text-white  w-40 rounded-md" >
+                        <div className="absolute mt-8 items-center bg-black text-white  w-40 rounded-md font-satoshi" >
                             <div className="relative">
                                 <input className="rounded-md absolute h-8" type="text" placeholder="Search for Prod.." onClick={() => {}}
                             />
