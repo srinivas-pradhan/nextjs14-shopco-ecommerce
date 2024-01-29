@@ -11,3 +11,8 @@
     font-family: "integral-cf-bold"; 
     src: url("../public/fonts/Integralcf-bold.otf"); 
 } 
+
+@font-face { 
+    font-family: "satoshi-medium"; 
+    src: url("../public/fonts/Satoshi-Medium.ttf"); 
+} 

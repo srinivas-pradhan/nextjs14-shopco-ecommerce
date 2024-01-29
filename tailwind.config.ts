@@ -10,12 +10,14 @@ const config: Config = {
   theme: {
     fontFamily: {
       'satoshi': ["satoshi"],
-      'integral-cf-bold': ["integral-cf-bold"]
+      'integral-cf-bold': ["integral-cf-bold"],
+      'satoshi-medium': ["satoshi-medium"]
     },
     extend: {
       backgroundImage: (theme) => ({
         'main-screen': "url('../public/elements/MainScreenFull.svg')",
         'main-screen-mobile': "url('../public/elements/MainScreenMobile.svg')",
+        'mobile-background': "url('../public/elements/MobileBackground.svg')",
       }),
       colors: {
         'spanish-gray': '#9a9a9a',
