@@ -86,7 +86,7 @@ const NavBar = () => {
                         { shopOpen &&
                             <div className="absolute mt-8 items-center bg-black text-white p-4 w-44 rounded-md" ref={menuRef}>
                                 {Categories.map(category => (
-                                    <div className="cursor-default gap-8" onClick={() => {}}>{category.name}</div>    
+                                    <div className="cursor-default gap-8" key={category.name} onClick={() => {}}>{category.name}</div>    
                                 ))}
 
                                 <div className="cursor-default gap-8" >------------</div>
@@ -97,7 +97,7 @@ const NavBar = () => {
                         }
                     </li>
                     {MenuItems.map(item => (
-                        <li className="cursor-default" onClick={() => {}}>{item.name}</li>
+                        <li className="cursor-default" key={item.name} onClick={() => {}}>{item.name}</li>
                     ))}
                 </ul>
             </div>
@@ -201,7 +201,7 @@ const NavBar = () => {
                             Shop
                         </li>
                         {MenuItems.map(item => (
-                            <li className="cursor-default text-4xl" onClick={() => {}}>{item.name}</li>  
+                            <li className="cursor-default text-4xl" key={item.name} onClick={() => {}}>{item.name}</li>  
                         ))}
                     </ul>
                 </div>

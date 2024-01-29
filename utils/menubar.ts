@@ -12,11 +12,23 @@ const Categories = [
 
 const SpecialSelections = [
     {
+        name: "Casual"
+    },    
+    {
+        name: "Formal"
+    },
+    {
+        name: "Party"
+    },    
+    {
+        name: "Gym"
+    },
+    {
         name: "Top Selling"
     },
     {
         name: "Latest Trends"
-    }
+    },
 ]
 
 const MenuItems = [
