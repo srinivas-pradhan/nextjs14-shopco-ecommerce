@@ -1,11 +1,12 @@
 'use client';
+import { Details } from '@/utils/platformdata';
 
 export const LandingScreen = () => {
     return ( 
         <div className="flex">
             <div className="
                 w-full
-                md:h-[663px]
+                md:h-[675px]
                 h-[853px]
                 md:resize-x
                 md:bg-main-screen
@@ -53,7 +54,7 @@ export const LandingScreen = () => {
                     sm:mt-4
                     lg:w-[210px]
                     md:w-[320px]
-                    h-[52px] 
+                    h-[52px]
                     bg-black 
                     rounded-full 
                     transition 
@@ -77,8 +78,48 @@ export const LandingScreen = () => {
                     </div>
                 </div>
                 <div className="
+                    flex
+                    lg:ml-20
+                    md:ml-2
+                    xs:ml-6
+                    md:mt-0
+                    mt-10
+                    lg:mt-12
+                    divide-x 
+                    divide-dotted
+                    divide-stone-400 
+                    "
+                >
+                    {Details.map((detail) =>(
+                        <div className="
+                            xl:text-3xl 
+                            lg:text-2xl 
+                            xs:text-lg 
+                            md:-mt-4 
+                            xl:px-8 
+                            lg:px-4 
+                            px-4
+                            font-satoshi-bold
+                            " 
+                            key={detail.count}
+                        >
+                            {detail.count}
+                            <div className="
+                                text-xs 
+                                font-satoshi
+                                flex-wrap
+                                " 
+                                key={detail.name}
+                            >
+                                {detail.name}
+                            </div>
+                        </div> 
+                    ))}
+                </div>
+                <div className="
                     md:hidden 
-                    w-full 
+                    w-full
+                    mt-12
                     h-[448px] 
                     inline-block 
                     align-baseline 

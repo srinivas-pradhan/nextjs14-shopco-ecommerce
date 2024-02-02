@@ -16,3 +16,8 @@
     font-family: "satoshi-medium"; 
     src: url("../public/fonts/Satoshi-Medium.ttf"); 
 } 
+
+@font-face { 
+    font-family: "satoshi-bold"; 
+    src: url("../public/fonts/Satoshi-Bold.ttf"); 
+} 

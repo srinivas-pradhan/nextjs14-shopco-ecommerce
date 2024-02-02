@@ -11,7 +11,8 @@ const config: Config = {
     fontFamily: {
       'satoshi': ["satoshi"],
       'integral-cf-bold': ["integral-cf-bold"],
-      'satoshi-medium': ["satoshi-medium"]
+      'satoshi-medium': ["satoshi-medium"],
+      'satoshi-bold': ["satoshi-bold"]
     },
     extend: {
       backgroundImage: (theme) => ({
