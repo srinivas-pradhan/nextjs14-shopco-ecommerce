@@ -99,6 +99,7 @@ export const LandingScreen = () => {
                             xl:px-8 
                             lg:px-4 
                             px-4
+                            justify-center
                             font-satoshi-bold
                             " 
                             key={detail.count}
@@ -128,6 +129,27 @@ export const LandingScreen = () => {
                     bg-main-screen-mobile
                     "
                 >
+                    <div className="grid grid-cols-2 space-x-24 mt-12 flex-auto">
+                        <div className="
+                            mt-24
+                            ml-6
+                            bg-diamond-sm 
+                            w-44 
+                            h-44 
+                            bg-no-repeat
+                            "
+                        >
+                        </div>
+                        <div className="
+                            flex-auto
+                            bg-diamond-lg
+                            w-44 
+                            h-44 
+                            bg-no-repeat
+                            "
+                        >
+                        </div>
+                    </div>
                 </div>
             </div> 
         </div>

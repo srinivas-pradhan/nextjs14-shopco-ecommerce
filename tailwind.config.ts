@@ -19,6 +19,8 @@ const config: Config = {
         'main-screen': "url('../public/elements/MainScreenFull.svg')",
         'main-screen-mobile': "url('../public/elements/MainScreenMobile.svg')",
         'mobile-background': "url('../public/elements/MobileBackground.svg')",
+        'diamond-sm': "url('../public/elements/Diamond.svg')",
+        'diamond-lg': "url('../public/elements/Diamond2.svg')",
       }),
       colors: {
         'spanish-gray': '#9a9a9a',
